@@ -8,9 +8,11 @@ import Home from "./pages/Home";
 import { DashboardPage } from "./pages/Dashboard";
 import Chat from "./pages/Chat";
 import { WalletsPage } from "./pages/Wallets";
-
-const Market = () => <div className="p-6 text-white">Market Analysis</div>;
-const Settings = () => <div className="p-6 text-white">Settings</div>;
+import { ReferralsPage } from "./pages/Referrals";
+import { SignUpPage } from "./pages/SignUp";
+import { SignInPage } from "./pages/SignIn";
+import { MarketAnalysisPage } from "./pages/MarketAnalysis";
+import { SettingsPage } from "./pages/Settings";
 
 // Layout with toggleable sidebar
 function MainLayout({ children }: { children: React.ReactNode }) {
@@ -43,6 +45,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
 
+        {/* Auth Pages */}
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/login" element={<Navigate to="/signin" replace />} />
+
         {/* Dashboard & other pages */}
         <Route
           path="/dashboard"
@@ -69,10 +76,18 @@ function App() {
           }
         />
         <Route
+          path="/referrals"
+          element={
+            <MainLayout>
+              <ReferralsPage />
+            </MainLayout>
+          }
+        />
+        <Route
           path="/market"
           element={
             <MainLayout>
-              <Market />
+              <MarketAnalysisPage />
             </MainLayout>
           }
         />
@@ -80,7 +95,7 @@ function App() {
           path="/settings"
           element={
             <MainLayout>
-              <Settings />
+              <SettingsPage />
             </MainLayout>
           }
         />

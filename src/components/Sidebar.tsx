@@ -12,12 +12,14 @@ import { FiMessageCircle, FiSettings } from "react-icons/fi";
 import { MdDashboard } from "react-icons/md";
 import { RiWallet3Line } from "react-icons/ri";
 import { TbChartBar } from "react-icons/tb";
+import { FiUsers } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 const menuItems = [
   { title: "Dashboard", icon: MdDashboard, path: "/dashboard" },
   { title: "Chat", icon: FiMessageCircle, path: "/chat" },
   { title: "My Wallets", icon: RiWallet3Line, path: "/wallets" },
+  { title: "Referrals", icon: FiUsers, path: "/referrals" },
   { title: "Market Analysis", icon: TbChartBar, path: "/market" },
   { title: "Settings", icon: FiSettings, path: "/settings" },
 ];
