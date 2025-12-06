@@ -47,19 +47,22 @@ export function SignUpPage() {
           <p className="text-gray-400">Initialize your access to the network</p>
         </div>
 
-        <div className="p-8 border border-white/10 rounded-2xl backdrop-blur-xl bg-[#16181f]/50">
+        <div className="relative p-[1px] rounded-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195]">
+          <div className="p-8 bg-[#0d0f18] rounded-2xl">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="space-y-4">
               <div className="group">
                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 ml-1">Full Name</label>
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#6366F1] transition-colors" size={18} />
-                  <input 
-                    type="text" 
-                    placeholder="John Doe"
-                    className="w-full bg-black/20 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#6366F1]/50 focus:ring-1 focus:ring-[#6366F1]/50 transition-all"
-                    required
-                  />
+                  <div className="p-[1px] rounded-xl bg-gradient-to-r from-[#9945FF]/50 to-[#14F195]/50">
+                    <input 
+                      type="text" 
+                      placeholder="Victor Linkie"
+                      className="w-full bg-[#0d0f18] border-0 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-500 focus:outline-none transition-all"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -67,12 +70,14 @@ export function SignUpPage() {
                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 ml-1">Email Address</label>
                 <div className="relative">
                   <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#6366F1] transition-colors" size={18} />
-                  <input 
-                    type="email" 
-                    placeholder="john@example.com"
-                    className="w-full bg-black/20 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#6366F1]/50 focus:ring-1 focus:ring-[#6366F1]/50 transition-all"
-                    required
-                  />
+                  <div className="p-[1px] rounded-xl bg-gradient-to-r from-[#9945FF]/50 to-[#14F195]/50">
+                    <input 
+                      type="email" 
+                      placeholder="victorlinkie@example.com"
+                      className="w-full bg-[#0d0f18] border-0 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-500 focus:outline-none transition-all"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -80,12 +85,14 @@ export function SignUpPage() {
                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 ml-1">Password</label>
                 <div className="relative">
                   <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#6366F1] transition-colors" size={18} />
-                  <input 
-                    type="password" 
-                    placeholder="••••••••"
-                    className="w-full bg-black/20 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#6366F1]/50 focus:ring-1 focus:ring-[#6366F1]/50 transition-all"
-                    required
-                  />
+                  <div className="p-[1px] rounded-xl bg-gradient-to-r from-[#9945FF]/50 to-[#14F195]/50">
+                    <input 
+                      type="password" 
+                      placeholder="••••••••"
+                      className="w-full bg-[#0d0f18] border-0 rounded-xl py-3 pl-12 pr-4 text-white placeholder:text-gray-500 focus:outline-none transition-all"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -94,7 +101,7 @@ export function SignUpPage() {
               <button 
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-[#6366F1]/25 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-[#9945FF] to-[#14F195] text-white font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-[#9945FF]/25 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -111,14 +118,15 @@ export function SignUpPage() {
                 <div className="w-full border-t border-white/10"></div>
               </div>
               <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-[#16181f] px-2 text-gray-400">Or continue with</span>
+                <span className="bg-[#0d0f18] px-2 text-gray-400">Or continue with</span>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              <button type="button" className="col-span-2 flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white transition-all hover:-translate-y-0.5 group">
-                <Wallet size={18} className="text-[#06B6D4] group-hover:text-white transition-colors" />
-                <span className="text-sm font-medium">Connect Wallet</span>
+              <button type="button" className="col-span-2 flex items-center justify-center gap-2 py-3 border border-yellow-500/50 rounded-xl text-white transition-all hover:-translate-y-0.5 group relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-orange-500/10" />
+                <Wallet size={18} className="text-yellow-500 relative z-10" />
+                <span className="text-sm font-medium relative z-10">Genesis Pass Connect</span>
               </button>
               
               <button type="button" className="flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white transition-all hover:-translate-y-0.5">
@@ -146,10 +154,11 @@ export function SignUpPage() {
           <div className="mt-8 text-center">
             <p className="text-gray-400 text-sm">
               Already have an account?{" "}
-              <Link to="/signin" className="text-[#6366F1] hover:text-[#6366F1]/80 font-medium transition-colors inline-flex items-center gap-1">
+              <Link to="/signin" className="text-[#14F195] hover:text-[#14F195]/80 font-medium transition-colors inline-flex items-center gap-1">
                 Sign in <ChevronRight size={14} />
               </Link>
             </p>
+          </div>
           </div>
         </div>
         
