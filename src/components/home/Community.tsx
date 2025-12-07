@@ -27,7 +27,7 @@ export default function Community() {
             {/* Telegram */}
             <StaggerItem>
             <a
-              href="https://t.me/yourtelegram"
+              href="https://t.me/BlockAiOrg"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-[#229ED9] hover:border-[#229ED9] transition-all duration-300 group/btn hover:-translate-y-1 hover:shadow-lg hover:shadow-[#229ED9]/20"
@@ -40,7 +40,7 @@ export default function Community() {
             {/* Discord */}
             <StaggerItem>
             <a
-              href="https://discord.com/invite/yourdiscord"
+              href="https://discord.gg/XCHnpatG"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-[#5865F2] hover:border-[#5865F2] transition-all duration-300 group/btn hover:-translate-y-1 hover:shadow-lg hover:shadow-[#5865F2]/20"
@@ -53,7 +53,7 @@ export default function Community() {
             {/* Twitter/X */}
             <StaggerItem>
             <a
-              href="https://twitter.com/yourtwitter"
+              href="https://x.com/BlockAi_live"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-black hover:border-white/20 transition-all duration-300 group/btn hover:-translate-y-1 hover:shadow-lg hover:shadow-white/10"
