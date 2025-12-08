@@ -57,7 +57,7 @@ export default function FeaturesGrid({ features }: FeaturesGridProps) {
                   <div className="relative w-full rounded-2xl h-full p-[1px] bg-gradient-to-b from-white/20 to-transparent">
                     {/* Card Content */}
                     <div 
-                      className="rounded-2xl p-8 w-full backdrop-blur-xl relative h-full bg-[#0B0E1A]/80 flex flex-col items-center justify-center min-h-[250px] transition-all duration-300 group-hover:bg-white/5"
+                      className="rounded-2xl p-8 w-full relative h-full bg-[#0B0E1A]/90 flex flex-col items-center justify-center min-h-[250px] transition-all duration-300 group-hover:bg-[#0B0E1A]"
                     >
                       <div className="flex justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">{f.icon}</div>
                       <p className="text-gray-300 text-sm text-center leading-relaxed">{f.text}</p>
@@ -86,10 +86,10 @@ export default function FeaturesGrid({ features }: FeaturesGridProps) {
     <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 px-6 md:px-0">
       {features.map((f, i) => (
         <StaggerItem key={i} className="flex flex-col items-center group">
-          <div className="relative w-full rounded-2xl h-full p-[1px] bg-gradient-to-b from-white/20 to-transparent transition-all duration-300 group-hover:-translate-y-2">
+          <div className="relative w-full rounded-2xl h-full p-[1px] bg-gradient-to-b from-white/20 to-transparent transition-all duration-300 group-hover:-translate-y-2 will-change-transform">
             {/* Card Content */}
             <div 
-              className="rounded-2xl p-8 w-full backdrop-blur-xl relative h-full bg-[#0B0E1A]/40 border border-transparent transition-all duration-300 group-hover:bg-[#0B0E1A]/60"
+              className="rounded-2xl p-8 w-full relative h-full bg-[#0B0E1A]/90 border border-transparent transition-all duration-300 group-hover:bg-[#0B0E1A]"
             >
               <div className="flex justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">{f.icon}</div>
               <p className="text-gray-300 text-sm text-center leading-relaxed">{f.text}</p>

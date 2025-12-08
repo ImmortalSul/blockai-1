@@ -74,7 +74,7 @@ export default function Home() {
           <Hero launch={launch} />
         </ScrollReveal>
         
-        <section className="mt-20 px-6 md:px-0">
+        <section className="mt-20 px-6 md:px-0 relative z-30 isolate">
           <ScrollReveal>
             <h3 className="text-[#10e291] font-bold text-3xl md:text-4xl lg:text-5xl text-center tracking-wide mb-24">The Full Power of BlockAI</h3>
           </ScrollReveal>
