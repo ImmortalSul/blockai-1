@@ -17,8 +17,8 @@ export default function FAQ() {
       a: "We currently support Solana, Ethereum, and Base. We are continuously expanding our coverage to include more L1s and L2s based on community demand.",
     },
     {
-      q: "Is the XToken required for access?",
-      a: "Basic analytics are free for everyone. Holding XToken unlocks premium features like real-time whale alerts, advanced predictive models, and exclusive community channels.",
+      q: "Is the BlockAI Token required for access?",
+      a: "Basic analytics are free for everyone. Holding BlockAI Token unlocks premium features like real-time whale alerts, advanced predictive models, and exclusive community channels.",
     },
     {
       q: "How accurate are the AI predictions?",
