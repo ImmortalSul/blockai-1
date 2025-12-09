@@ -22,9 +22,9 @@ import { Sparkles } from "lucide-react";
 const menuItems = [
   { title: "Dashboard", icon: MdDashboard, path: "/dashboard" },
   { title: "Chat", icon: FiMessageCircle, path: "/chat" },
-  { title: "My Wallets", icon: RiWallet3Line, path: "/wallets" },
-  { title: "Referrals", icon: FiUsers, path: "/referrals" },
+  { title: "Wallets", icon: RiWallet3Line, path: "/wallets" },
   { title: "Market Analysis", icon: TbChartBar, path: "/market" },
+  { title: "Network", icon: FiUsers, path: "/referrals" },
   { title: "Settings", icon: FiSettings, path: "/settings" },
 ];
 
